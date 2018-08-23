@@ -1,0 +1,16 @@
+.connect
+  padding: $section-padding
+  background: url('../img/background-1.png') bottom left no-repeat $light
+  text-align: center
+  .title-block
+    margin-bottom: 30px
+  .grid
+    @include grid($flex-wrap: wrap, $gutter: 30px)
+    .col-2
+      @include grid-col($col:2, $gutter: 30px)
+  &__form
+    margin: 50px 0
+  &__btn
+    display: inline-block
+    vertical-align: top
+    margin-top: -30px

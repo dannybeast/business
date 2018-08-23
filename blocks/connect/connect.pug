@@ -1,0 +1,28 @@
++b.SECTION(class="connect")
+  .container
+    +b.DIV(class="title-block")
+      +e.H2(class="title") Давайте подключимся!
+    +e.FORM(class="form")
+      .grid
+        .col-2
+          +b.DIV(class="input-block --disabled")
+            +e.INPUT(class="input", type="text", placeholder="Имя")
+        .col-2
+          +b.DIV(class="input-block --error")
+            +e.INPUT(class="input", type="text", placeholder="Фамилия")
+            +e.P(class="text") Данное поле обязательно для заполнения
+        .col-2
+          +b.DIV(class="input-block")
+            +e.INPUT(class="input", type="text", placeholder="Компания")
+        .col-2
+          +b.DIV(class="input-block")
+            +e.SELECT(class="select", placeholder="Имя")
+              option Страна
+              option Россия
+        .col-2
+          +b.DIV(class="input-block")
+            +e.INPUT(class="input", type="text", placeholder="E-mail")
+        .col-2
+          +b.DIV(class="input-block")
+            +e.INPUT(class="input", type="text", placeholder="Мобильный телефон")
+    +e.A(href="#", class="btn btn --accent --hover-scale") Отправить форму

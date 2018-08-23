@@ -1,11 +1,14 @@
 extends ../layout/layout
 
 block variables 
-  - var pageClass = 'body-index';
+  - var pageClass = 'body__index';
   - var pageTitle = "Коммуникационная платформа для бизнеса";
   - var pageDescription = ""
   - var pageName = "index"
 
 block content
   +b.MAIN
-      
+    include ../counts/counts
+    include ../connect/connect
+    include ../differences/differences
+    include ../claim/claim

@@ -8,8 +8,31 @@
   padding-right: 10px
 
 .grid
-  @include grid($flex-wrap:wrap, $gutter:10px)
-
+  @include grid($gutter: 20px)
+  .col-1
+    @include grid-col($col:1, $gutter: 20px)
+  .col-2
+    @include grid-col($col:2, $gutter: 20px)
+  .col-3
+    @include grid-col($col:3, $gutter: 20px)
+  .col-4
+    @include grid-col($col:4, $gutter: 20px)
+  .col-5
+    @include grid-col($col:5, $gutter: 20px)
+  .col-6
+    @include grid-col($col:6, $gutter: 20px)
+  .col-7
+    @include grid-col($col:7, $gutter: 20px)
+  .col-8
+    @include grid-col($col:8, $gutter: 20px)
+  .col-9
+    @include grid-col($col:9, $gutter: 20px)
+  .col-10
+    @include grid-col($col:10, $gutter: 20px)
+  .col-11
+    @include grid-col($col:11, $gutter: 20px)
+  .col-12
+    @include grid-col($col:12, $gutter: 20px)
 
 @media (min-width: 768px)
   .container

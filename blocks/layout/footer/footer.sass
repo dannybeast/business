@@ -1,16 +1,129 @@
+
+$opacity-footer: 0.5
+
 // footer
 .footer
   background: $dark
-  padding: 40px 0
+  padding: 40px 0 0 0
+  color:#fff
+  *
+    color:#fff
+  a
+    &:hover
+      text-decoration: underline
+
+  &__bottom
+    background: darken($dark, 10%)
+    height: 50px
+    margin-top: 40px
+    font-size: 12px
+    p
+      opacity: $opacity-footer
+    .copyright
+      margin-right: 15px
+    .container
+      height: 100%
+      display: flex
+      align-items: center
+  &__bottom-menu
+    display: flex
+    align-items: center
+    li
+      display: flex
+      align-items: center
+      a
+        opacity: $opacity-footer
+        &:hover
+          opacity: 1
+          text-decoration: none
+      &:last-child
+        &:after
+          display: none
+      &:after
+        content: ''
+        width: 1px
+        height: 10px
+        background: #fff
+        opacity: $opacity-footer
+        display: block
+        margin: 0 10px
+
+  &__links-list
+    li
+      p
+        margin-bottom: 15px
+        display: block
+        text-align: left
+      a
+        padding-bottom: 15px
+        display: block
+        opacity: $opacity-footer
+        &:hover
+          opacity: 1
+          text-decoration: none
+      &:last-child
+        a
+          padding-bottom: 0
+  &__title-list
+    text-transform: uppercase
+    font-size: 14px
+    text-align: left
+    font-weight: 500
+    opacity: 1
   &__logo
-    width: 100%
+    width: 75px
+    margin-right: 30px
     display: block
     img
       width: 100%
       display: block
-  .container
-    height: 100%
-    align-items: center
-    p
-      text-align: center
-      width: 100%
+  .social-icons
+    justify-content: flex-end
+
+
+// social icons
+.social-icons
+  display: flex
+  align-items: center
+  list-style: none
+  li
+    margin: 0 10px 0 0
+    &.vk
+      a
+        &:before
+          content: ''
+          width: 17px
+          height: 10px
+          display: block
+          background: url(../img/social-icons/vk.svg) center no-repeat
+          background-size: contain
+    &.facebook
+      a
+        &:before
+          content: ''
+          width: 8px
+          height: 16px
+          display: block
+          background: url(../img/social-icons/facebook.svg) center no-repeat
+          background-size: contain
+    &.instagram
+      a
+        &:before
+          content: ''
+          width: 16px
+          height: 16px
+          display: block
+          background: url(../img/social-icons/instagram.svg) center no-repeat
+          background-size: contain
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 40px
+      height: 40px
+      border: solid 1px $light
+      border-radius: 50%
+      transition: all .2s ease
+      &:hover
+        border-color: $main-color
+        transform: scale(1.1)

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild-->
   </head>
-  <body class="body-index">
+  <body class="body__index">
     <div class="notice notice--red">
       <p class="notice__text">успех
       </p>
@@ -35,7 +35,16 @@
         <p>WhatsApp Business now on Infobip. Request early access! </p></a>
         <!-- header-->
         <header class="header" style="background-image:url('img/index.jpg')">
-          <nav class="navigation">
+          <nav class="navigation"><a class="navigation__logo" href="#"><img src="img/logo/logo.svg"></a>
+            <ul>
+              <li><a href="#">Бизнесу</a></li>
+              <li><a href="#">Интеграция</a></li>
+              <li><a href="#">Операторам</a></li>
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Whatsapp business</a></li>
+            </ul>
+            <div class="right"><a class="btn">Логин</a><a class="navigation__btn btn btn--border">Оставить заявку</a>
+            </div>
           </nav>
           <div class="container">
             <div class="grid">
@@ -49,6 +58,127 @@
           </div>
         </header>
         <main role="main">
+          <section class="counts">
+            <div class="container">
+              <div class="title-block">
+                <h2 class="title-block__title">Доставьте ваше сообщение по любому каналу на любое устройство в любую точку мира.
+                </h2>
+              </div>
+              <div class="grid">
+                <div class="col-3">
+                  <div class="counts__block">
+                    <p class="count">200+ <span>млрд</span></p>
+                    <p class="desc">ЗАПРОСОВ К API ЕЖЕГОДНО</p>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="counts__block">
+                    <p class="count">7+ <span>млрд</span></p>
+                    <p class="desc">Транзакций ежемесячно</p>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="counts__block">
+                    <p class="count">4+ <span>млрд</span></p>
+                    <p class="desc">Мобильных устройств в покрытии</p>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="counts__block">
+                    <p class="count">800+ <span>млрд</span></p>
+                    <p class="desc">Сотовых операторов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="connect">
+            <div class="container">
+              <div class="title-block">
+                <h2 class="title-block__title">Давайте подключимся!
+                </h2>
+              </div>
+              <form class="connect__form">
+                <div class="grid">
+                  <div class="col-2">
+                    <div class="input-block input-block--disabled"><input class="input-block__input" type="text" placeholder="Имя"/>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="input-block input-block--error"><input class="input-block__input" type="text" placeholder="Фамилия"/>
+                      <p class="input-block__text">Данное поле обязательно для заполнения
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="input-block"><input class="input-block__input" type="text" placeholder="Компания"/>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="input-block">
+                      <select class="input-block__select" placeholder="Имя">
+                        <option>Страна</option>
+                        <option>Россия</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="input-block"><input class="input-block__input" type="text" placeholder="E-mail"/>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="input-block"><input class="input-block__input" type="text" placeholder="Мобильный телефон"/>
+                    </div>
+                  </div>
+                </div>
+              </form><a class="connect__btn btn btn--accent btn--hover-scale" href="#">Отправить форму</a>
+            </div>
+          </section>
+          <section class="differences">
+            <div class="container">
+              <div class="title-block">
+                <h2 class="title-block__title">В чем отличия Infobip?
+                </h2>
+                <p class="title-block__description">Мы знаем о технологиях рассылок все, потому что мы создали крупнейшую в мире мультиканальную платформу A2P рассылок.
+                </p>
+              </div>
+              <div class="grid">
+                <div class="col-4">
+                  <div class="differences__block">
+                    <div class="icon"><img src="img/1.svg"></div>
+                    <h5 class="title">МЕЖДУНАРОДНЫЙ СЕРВИС И МЕСТНЫЙ ОФИС</h5>
+                    <p>Более 50 офисов и локальных команд по всему миру позволяют нам собирать уникальную отраслевую экспертизу и делиться ею с вами.</p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="differences__block">
+                    <div class="icon"><img src="img/2.svg"></div>
+                    <h5 class="title">Мы соединим вас с миром</h5>
+                    <p>Международное покрытие в 190 странах мира поможет достичь самых амбициозных целей ваших коммуникационных кампаний..</p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="differences__block">
+                    <div class="icon"><img src="img/3.svg"></div>
+                    <h5 class="title">ПОДДЕРЖКА НА ВАШЕМ ЯЗЫКЕ</h5>
+                    <p>24/7 наши специалисты тех поддержки показывают лучшую скорость реакции в индустрии. Используйте нашу базу знаний, напишите нам письмо или задайте вопрос в онлайн чате - вы получите мгновенный ответ.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="claim">
+            <div class="container">
+              <div class="grid">
+                <div class="col-7">
+                  <h2 class="claim__title">Глобальные коммуникации в один клик.
+                  </h2>
+                </div>
+                <div class="col-5"><a class="claim__btn btn btn--border btn--hover-scale">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
       <!-- footer-->
@@ -57,11 +187,84 @@
           <div class="grid">
             <div class="col-1"><a class="footer__logo" href="/"><img src="img/logo/logo.svg"></a>
             </div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
+            <div class="col-2">
+              <ul class="footer__links-list">
+                <li><li>
+                  <p class="footer__title-list">Материалы
+                  </p></li>
+                </li>
+                <li><a href="#">Документация по API</a></li>
+                <li><a href="#">Анализ кейсов</a></li>
+                <li><a href="#">Брошюры</a></li>
+                <li><a href="#">Вебинары</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Инжиниринг</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Глоссарий</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul class="footer__links-list">
+                <li><li>
+                  <p class="footer__title-list">Услуги
+                  </p></li>
+                </li>
+                <li><a href="#">SMS</a></li>
+                <li><a href="#">Мобильные рассылки</a></li>
+                <li><a href="#">Двухфакторная аутентификация</a></li>
+                <li><a href="#">Номер для приема SMS</a></li>
+                <li><a href="#">Проверка номера</a></li>
+                <li><a href="#">Голосовые услуги</a></li>
+                <li><a href="#">Push-уведомления</a></li>
+                <li><a href="#">Электронная почта</a></li>
+                <li><a href="#">Месседжеры</a></li>
+                <li><a href="#">OMNI</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul class="footer__links-list">
+                <li><li>
+                  <p class="footer__title-list">Компания
+                  </p></li>
+                </li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Офисы</a></li>
+                <li><a href="#">Новости и пресса</a></li>
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Ассоциации</a></li>
+                <li><a href="#">Сертификаты и награды</a></li>
+                <li><a href="#">Карьера</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul class="footer__links-list">
+                <li><li>
+                  <p class="footer__title-list">Партнеры
+                  </p></li>
+                </li>
+                <li><a href="#">Партнерская программа A2P</a></li>
+                <li><a href="#">Агрегаторы</a></li>
+                <li><a href="#">Оптовые продажи</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul class="social-icons">
+                <li class="vk"><a href="#" target="_blank" title="Вконтакте"></a></li>
+                <li class="facebook"><a href="#" target="_blank" title="Facebook"></a></li>
+                <li class="instagram"><a href="#" target="_blank" title="Instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <p class="copyright">Copyright © 2006-2018 Infobip ltd.</p>
+            <ul class="footer__bottom-menu">
+              <li><a href="#">Условия использования</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Карта сайта</a></li>
+            </ul>
           </div>
         </div>
       </footer>
