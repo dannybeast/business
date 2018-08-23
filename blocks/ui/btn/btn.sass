@@ -1,0 +1,44 @@
+// кнопка
+.btn
+  position: relative
+  cursor: pointer
+  border: none
+  background: transparent
+  font-size: $main-font-size
+  padding: 15px 30px
+  text-transform: uppercase
+  font-weight: 500
+  font-size: 16px
+  border-radius: 30px
+  transition: all .2s ease
+  // модификатор цвет синий
+  &--accent
+    background: $accent-color
+    color:#fff
+    &:hover
+      background: darken($accent-color, 10%)
+  // модификатор цвет розовый
+  &--hover-scale
+    &:hover
+      transform: scale(1.1)
+
+  // модификатор иконки
+  &--icon
+    &::before
+      content: ''
+      width: 10px
+      height: 10px
+      background: #fff
+      display: inline-block
+      border-radius: 50%
+      margin-right: 10px
+    // модификатор иконки цвет черный
+    &-dark
+      &::before
+        content: ''
+        width: 10px
+        height: 10px
+        background: #000
+        display: inline-block
+        border-radius: 50%
+        margin-right: 10px

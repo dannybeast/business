@@ -1,0 +1,32 @@
+// header
+.header
+  background: $light
+  color:#fff
+  background-position: center
+  background-size: cover
+  position: relative
+  background-repeat: no-repeat
+  height: 775px
+  &__title
+    font-size: 80px
+    font-weight: 500
+    font-style: normal
+    line-height: 1.1em
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5)
+  &__subtitle
+    margin-top: 40px
+    font-size: 32px
+    font-style: normal
+    line-height: 1.1em
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5)
+  &__btn
+    display: inline-block
+    vertical-align: top
+    margin-top: 40px
+  .container
+    height: 100%
+  .grid
+    height: 100%
+    align-items: center
+  .column
+    @include grid-col($col:10, $gutter:10px)
