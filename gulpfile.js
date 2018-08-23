@@ -31,7 +31,7 @@ var paths = {
 
 //pug compile
 gulp.task('pug', function() {
-	return gulp.src([paths.blocks + 'pages/*.pug' ])
+	return gulp.src([paths.blocks + 'PAGES/*.pug' ])
 		.pipe(plumber())
 		.pipe(pug({pretty: true}))
 		.pipe(gulp.dest(paths.devDir))

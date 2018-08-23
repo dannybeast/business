@@ -30,4 +30,21 @@
     height: 100%
     align-items: center
   .column
-    @include grid-col($col:10, $gutter:10px)
+    @include grid-col($col:10, $gutter:15px)
+
+@media only screen and (max-width:992px)
+  .header
+    &__title
+      font-size: 60px
+    .column
+      @include grid-col($col:10, $gutter:30px)
+
+@media only screen and (max-width:767px)
+  .header
+    height: auto
+    padding-top: 60px
+    padding-bottom: 60px
+    &__title
+      font-size: 30px
+    &__subtitle
+      font-size: 17px

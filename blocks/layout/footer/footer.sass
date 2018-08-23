@@ -6,6 +6,10 @@ $opacity-footer: 0.5
   background: $dark
   padding: 40px 0 0 0
   color:#fff
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
   *
     color:#fff
   a
@@ -127,3 +131,26 @@ $opacity-footer: 0.5
       &:hover
         border-color: $main-color
         transform: scale(1.1)
+
+
+@media only screen and (max-width:1360px)
+  .footer
+    position: relative
+    margin-top: 0
+    &__links-list
+      padding-right: 10px
+      padding-left: 10px
+    .social-icons
+      justify-content: flex-start
+    .grid
+      flex-wrap: wrap
+      .col-1
+        display: none
+      .col-2
+        @include grid-col($col: 3, $gutter: 20px)
+
+@media only screen and (max-width:767px)
+  .footer
+    .grid
+      .col-2
+        @include grid-col($col: 12, $gutter: 20px)

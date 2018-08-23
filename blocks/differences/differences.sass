@@ -1,6 +1,6 @@
 .differences
   padding: $section-padding
-  background: url('../img/background-1.png') bottom left no-repeat
+  background: url('../img/background-1.png') bottom left no-repeat #fff
   .title-block
     margin-bottom: 60px
   .grid
@@ -35,3 +35,15 @@
       font-size: 18px
       text-transform: uppercase
       margin-bottom: 30px
+
+@media only screen and (max-width:1024px)
+  .differences
+    &__block
+      margin-bottom: 0
+      margin-top: 0
+      &::before
+        display: none
+    .grid
+      flex-wrap: wrap
+      > div
+        @include grid-col($col: 12, $gutter: 20px)

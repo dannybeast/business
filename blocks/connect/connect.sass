@@ -4,13 +4,23 @@
   text-align: center
   .title-block
     margin-bottom: 30px
-  .grid
-    @include grid($flex-wrap: wrap, $gutter: 30px)
-    .col-2
-      @include grid-col($col:2, $gutter: 30px)
   &__form
-    margin: 50px 0
+    margin: 50px 0 10px
   &__btn
     display: inline-block
     vertical-align: top
-    margin-top: -30px
+
+@media only screen and (max-width:1200px)
+  .connect
+    &__btn
+      margin-top: 0
+    .grid
+      flex-wrap: wrap
+      &>div
+        @include grid-col($col: 4, $gutter: 20px)
+
+@media only screen and (max-width:767px)
+  .connect
+    .grid
+      &>div
+        @include grid-col($col: 12, $gutter: 20px)
